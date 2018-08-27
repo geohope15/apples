@@ -121,34 +121,41 @@
 
 	<body>
 
+	
+	
+		<ul id="dropdown1" class="dropdown-content">
 
-<main class="mdl-layout__content">
-			<div class="mdl-layout__header-row mdl-layout--small-screen-only mdl-color--pink-900"> 
-              <span class="mdl-layout-title">Universal Font Converter</span> 
-          </div> 
-          
-              <span class="mdl-layout-title">
-			  <ul id="dropdown1" class="dropdown-content">
-				<li><a href="{{url_for('wintouni')}}">Win to Uni</a></li>
-				<li class="divider"></li>
-				<li><a href="{{url_for('unitowin')}}">Uni to Win</a></li>
-				<li class="divider"></li>
-				<li><a href="{{url_for('index')}}">Uni to Zawgyi</a></li>
-				<li class="divider"></li>
-				<li><a href="{{url_for('zawgyitouni')}}">Zawgyi to Uni</a></li>
-				<li class="divider"></li>
-				<li><a href="{{url_for('wintozawgyi')}}">Win to Zawgyi</a></li>
-				<li class="divider"></li>
-				<li><a href="{{url_for('zawgyitowin')}}">Zawgyi to Win</a></li>	
-		   </ul>
-		   <div class="mdl-layout--large-screen-only mdl-layout__header-row mdl-color--pink-900" id="hello">
-		   <hr>
-				 		   <a class="mdl-navigation__link" href="{{url_for('firstpage')}}">Home</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-							<a class="dropdown-trigger mdl-navigation__link" href="#!" data-target="dropdown1">&nbsp;&nbsp;&nbsp; 
-							unitowin &nbsp;&nbsp;&nbsp&nbsp;&nbsp;&nbsp;</a></li>	
-						
-				</div>
-			</span> 
+			<li><a href="{{url_for('home')}}">Unicode to Zawgyi</a></li>
+
+			<li><a href="{{url_for('zawgyitouni')}}">Zawgyi to Unicode</a></li>
+
+			<li><a href="{{url_for('wintouni')}}">WinInnwa to Unicode</a></li>
+
+			<li><a href="{{url_for('unitowin')}}">Unicode to WinInnwa</a></li>
+
+			<li><a href="{{url_for('wintozawgyi')}}">WinInnwa to Zawgyi</a></li>
+
+			<li><a href="{{url_for('zawgyitowin')}}">Zawgyi to WinInnwa</a></li>
+
+		</ul>
+
+		<nav>
+
+			<div class="nav-wrapper">
+
+				<a href="#!" class="brand-logo">Universal Font Converter</a>
+
+					<ul class="right hide-on-med-and-down">
+
+						<li><a class="dropdown-trigger" href="#!" data-target="dropdown1">&nbsp;&nbsp;Unicode to&nbsp;WinInnwa&nbsp;&nbsp;&nbsp;<i class="material-icons right">arrow_drop_down</i></a></li>
+						<li><a  href="{{url_for('firstpage')}}">Home</a></li>
+					</ul>
+
+			</div>
+
+		</nav>
+
+
 		<div class="page-content">
 			<form action="#" id="form2">
 				<div class="mdl-grid">
@@ -160,9 +167,10 @@
 					</div>
 							  		
 			</form>
+			<div>
 	<button type="submit" form="form2" id="button2">Send</button>
 	<button type="submit" class="waves-effect btn-large z-depth-0"id="button2" from="form2">Convert</button>
-        
+        </div>
 				
 	 <footer class="mdl-mega-footer" width="500px">
 						<div class="mdl-mega-footer--middle-section">
